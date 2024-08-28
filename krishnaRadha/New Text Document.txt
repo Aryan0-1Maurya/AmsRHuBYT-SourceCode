@@ -1,0 +1,6 @@
+open terminal 
+
+run this command :
+
+pip install turtle
+py index.py
