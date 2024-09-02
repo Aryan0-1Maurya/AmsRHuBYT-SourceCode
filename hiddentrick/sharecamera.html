@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Share Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        video {
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #000;
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Screen Share Demo</h1>
+    <button id="startShare">Start Screen Share</button>
+    <video id="screenVideo" autoplay></video>
+
+    <script>
+        const startShareButton = document.getElementById('startShare');
+        const screenVideo = document.getElementById('screenVideo');
+
+        startShareButton.addEventListener('click', async () => {
+            try {
+                // Request screen capture
+                const screenStream = await navigator.mediaDevices.getDisplayMedia({
+                    video: true,
+                    audio: false
+                });
+
+                // Display the screen capture in the video element
+                screenVideo.srcObject = screenStream;
+
+                // Stop screen sharing when the stream ends
+                screenStream.getVideoTracks()[0].addEventListener('ended', () => {
+                    screenVideo.srcObject = null;
+                    alert('Screen sharing has ended.');
+                });
+            } catch (error) {
+                console.error('Error accessing screen share:', error);
+                alert('Failed to start screen sharing.');
+            }
+        });
+    </script>
+</body>
+</html>
