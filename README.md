@@ -1,6 +1,8 @@
 [![Banner](https://github.com/Aryan0-1Maurya/Aryan0-1Maurya/blob/main/sir.jpg)]([https://codecrafters.io/github-banner](https://github.com/Aryan0-1Maurya/Aryan0-1Maurya/blob/main/sir.jpg))
 
-## Build your own-X ~AmsR
+## Build your own-X ~AmsR HuB 
+
+> *Aryan Maurya*
 
 This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch. 
 
