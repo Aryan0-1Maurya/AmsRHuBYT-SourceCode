@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 9%;
+    background: #1f242d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px 9% 0;
+}
+
+.home h1 {
+    font-size: 150px;
+    color: transparent;
+    text-shadow: 0 0 10px #fff;
+    -webkit-text-stroke: 2px #fff;
+    text-align: center;
+}
+
+.about {
+    justify-content: flex-end;
+}
+
+.about .about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.about-content a {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #4f68f2;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #4f68f2;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.gallery-content {
+    display: flex;
+    gap: 100px;
+}
+
+.gallery-content .outer {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 26px;
+    border: 2px solid #fff;
+}
+
+.gallery-content .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid #fff;
+}
+
+.gallery-content .inner img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    object-fit: cover;
+}
+
+.contact-form {
+    width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    height: 300px;
+    resize: none;
+}
+
+.contact-form button {
+    display: block;
+    padding: 12px 40px;
+    background: #4f68f2;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 10px #4f68f2;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#bee-model{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    transition: transform 1s ease-out;
+}

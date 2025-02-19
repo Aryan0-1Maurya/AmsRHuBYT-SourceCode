@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation Website | AmsRHuB</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">AmsRHuB</a>
+    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <model-viewer id="bee-model" src="bee_flying.glb" autoplay></model-viewer>
+    
+    <section class="home">
+        <h1>3D Animation</h1>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Bees</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nam facilis, voluptatibus laudantium similique consequatur sapiente asperiores id architecto modi eum quasi vero incidunt doloribus assumenda odio qui quae provident ex at recusandae! Perferendis quod accusamus qui ex nostrum quas labore beatae reiciendis aperiam officiis! Dicta quas saepe quia eaque ad recusandae deserunt dignissimos commodi cumque! Vitae facilis labore atque dicta commodi sit expedita eius fugit doloremque, quos saepe modi.</p>
+            <a href="#">View More</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-content">
+            <div class="outer">
+                <div class="inner">
+                    <img src="bee1.png">
+                </div>
+            </div>
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
+            <div class="outer">
+                <div class="inner">
+                    <img src="bee3.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <form class="contact-form">
+            <h2>Contact</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
