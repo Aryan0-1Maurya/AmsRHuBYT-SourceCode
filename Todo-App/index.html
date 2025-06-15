@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+input {
+  flex: 1;
+  padding: 8px;
+}
+button {
+  padding: 8px;
+}
+li {
+  list-style: none;
+  padding: 8px;
+  background: #eee;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.actions button {
+  margin-left: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+   <form id="todo-form">
+  <input type="text" id="taskInput" placeholder="Enter new task..." required />
+  <button type="submit">Add</button>
+</form>
+
+    <ul id="taskList"></ul>
+  </div>
+  <script src="todo.js"></script>
+</body>
+</html>
