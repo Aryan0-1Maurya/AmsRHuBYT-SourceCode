@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "AmsR NotePad",
+    "version": "1.0",
+    "description": "A simple notepad extension for Chrome.",
+    "permissions": [
+      "storage"
+    ],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
